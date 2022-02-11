@@ -45,3 +45,42 @@ Print `3` lines of output in the following order:
 44627.5
 4978
 ```
+
+**Explanation**
+
+**Mean:**
+
+We sum all `N` elements in the array, divide the sum by `N`, and print our result on a new line.
+```math
+\mu = \frac{x_{0} + x_{1} + x_{2} + x_{3} + x_{4} + x_{5} + x_{6} + x_{7} + x_{8} + x_{9}}{10} = \frac{439006}{10} = 43900.6
+```
+
+**Median:**
+
+To calculate the median, we need the elements of the array to be sorted in either non-increasing or non-decreasing order. The sorted array
+
+
+$`X = {4978, 11735, 14216, 14470, 38120, 51135, 64630, 67060, 73429, 99233}`$. We then average the two middle elements:
+```math
+median = \frac{x_{4} + x_{5}}{2} = \frac{89255}{2} = 44627.5
+```
+and print our result on a new line.
+
+**Mode:**
+
+We can find the number of occurrences of all the elements in the array:
+
+```
+ 4978 : 1
+11735 : 1
+14216 : 1
+14470 : 1
+38120 : 1
+51135 : 1
+64630 : 1
+67060 : 1
+73429 : 1
+99233 : 1
+```
+
+Every number occurs once, making `1` the maximum number of occurrences for any number in `X`. Because we have multiple values to choose from, we want to select the smallest one `4978`, and print it on a new line.
