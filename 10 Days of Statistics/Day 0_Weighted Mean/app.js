@@ -30,7 +30,14 @@ function readLine() {
 
 function weightedMean(X, W) {
     // Write your code here
+    let numerator = 0;
+    let denominator = 0;
 
+    for (let i = 0; i < X.length; i++) {
+        numerator += (X[i] * W[i]);
+        denominator += W[i];
+    }
+    console.log((numerator / denominator).toFixed(1));
 }
 
 function main() {
