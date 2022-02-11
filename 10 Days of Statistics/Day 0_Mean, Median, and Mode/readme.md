@@ -6,9 +6,8 @@ Given an array `X`, of `N` integers, calculate and print the respective mean, me
 Note: Other than the modal value (which will always be an integer), your answers should be in decimal form, rounded to a scale of `1` decimal place (i.e., `12.3`,  format).
 
 **Example**
-```math
+```
 N = 6
-
 X = [1, 2, 3, 4, 5, 5]
 ```
 
@@ -46,8 +45,3 @@ Print `3` lines of output in the following order:
 44627.5
 4978
 ```
-
-<p>\(x^2 = \sqrt{y}\)</p><br>
-<p style="color:blue;font-size:25px;">\(\frac {-b\pm\sqrt{b^2 - 4ac}}{2a}\)</P>
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js" integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
