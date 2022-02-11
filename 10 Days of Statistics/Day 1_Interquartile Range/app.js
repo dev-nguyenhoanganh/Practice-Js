@@ -30,6 +30,36 @@ function readLine() {
 
 function interQuartile(values, freqs) {
     // Print your answer to 1 decimal place within this function
+    let set = [];
+    for (let i = 0; i < values.length; i++) {
+        for (let j = 0; j < freqs[i]; j++) {
+            set.push(values[i]);
+        }
+    }
+
+    const nums = set.sort((a, b) => a - b);
+
+    let medianL = 0;
+    let medianU = 0;
+    const medianX = findMedian(nums);
+    if (medianX.length === 3) {
+        medianL = findMedian(nums.slice(0, medianX[1] + 1)); 
+        medianU = findMedian(nums.slice(medianX[2]))
+    } else {
+        medianL = findMedian(nums.slice(0, medianX[1]));
+        medianU = findMedian(nums.slice(medianX[1] + 1))
+    }
+
+    console.log((medianU[0] - medianL[0]).toFixed(1));
+}
+
+function findMedian(arr) {
+    let medianIndex = Math.floor(arr.length / 2);
+    if (arr.length % 2 === 0) {
+        return [(arr[medianIndex - 1] + arr[medianIndex]) / 2, medianIndex - 1, medianIndex];
+    } else {
+        return [arr[medianIndex], medianIndex];
+    }
 }
 
 function main() {
