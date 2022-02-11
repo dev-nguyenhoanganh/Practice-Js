@@ -84,9 +84,3 @@ We can find the number of occurrences of all the elements in the array:
 ```
 
 Every number occurs once, making `1` the maximum number of occurrences for any number in `X`. Because we have multiple values to choose from, we want to select the smallest one `4978`, and print it on a new line.
-
-<script>
-katex.render(String.raw`c = \pm\sqrt{a^2 + b^2}`, element, {
-    throwOnError: false
-});
-<script>
