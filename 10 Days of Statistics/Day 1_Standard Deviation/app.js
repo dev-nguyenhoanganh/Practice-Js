@@ -28,7 +28,24 @@ function readLine() {
 
 function stdDev(arr) {
     // Print your answers to 1 decimal place within this function
+    let mean = findMean(arr);
+    let stdDev = 0;
 
+    for (let i = 0; i < arr.length; i++) {
+        stdDev += Math.pow(arr[i] - mean, 2);
+    }
+
+    stdDev = Math.sqrt(stdDev / arr.length).toFixed(1);
+    
+    console.log(stdDev);
+}
+
+function findMean(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return (sum / arr.length).toFixed(1);
 }
 
 function main() {
