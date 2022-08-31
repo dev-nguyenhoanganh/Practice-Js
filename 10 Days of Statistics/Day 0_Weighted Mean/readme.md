@@ -11,15 +11,15 @@ X = [1, 2, 3]
 W = [5, 6, 7]
 ```
 
-The array of values $`X[i] * W[i] = [5, 12, 21]`$. Their sum of $`W = 18`$. The weighted of mean is $`\frac{38}{18} = 2.11111...`$. Print 2.1 and return.
+The array of values $X[i] * W[i] = [5, 12, 21]$. Their sum of $W = 18$. The weighted of mean is $\frac{38}{18} = 2.11111...$. Print 2.1 and return.
 
 **Function Description**
 
 Complete the weightedMean function in the editor below.
 
 weightedMean has the following parameters:
-- int $`X[N]`$: An array of values
-- int $`W[N]`$: An array of weights
+- int $X[N]$: An array of values
+- int $W[N]$: An array of weights
 
 **Prints**
 
@@ -35,9 +35,9 @@ The third line contains `N` space-separated integers that descdribe the elements
 
 **Constraints**
 
-- $`5 \le N \le 50`$
-- $`0 < X[i] \le 100`$, where $`X[i]`$ is the $`i^{th}`$ element of array $`X`$
-- $`0 < W[i] \le 100`$, where $`W[i]`$ is the $`i^{th}`$ element of array $`W`$
+- $5 \le N \le 50$
+- $0 < X[i] \le 100$, where $X[i]$ is the $i^{th}$ element of array $X$
+- $0 < W[i] \le 100$, where $W[i]$ is the $i^{th}$ element of array $W$
 
 **Output Format**
 

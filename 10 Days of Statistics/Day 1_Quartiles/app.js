@@ -1,6 +1,8 @@
 'use strict';
 
 const fs = require('fs');
+var path = require("path");
+
 
 process.stdin.resume();
 process.stdin.setEncoding('utf-8');
@@ -13,13 +15,12 @@ process.stdin.on('data', function(inputStdin) {
 });
 
 process.stdin.on('end', function() {
-    inputString = inputString.split('\n');
-
+    inputString = inputString.split('\r\n');
     main();
 });
 
 function readLine() {
-    return inputString[currentLine++];
+    return inputString;
 }
 
 /*
@@ -62,16 +63,32 @@ function findMedian(arr) {
  * medianU = 16.5
  */
 
+function separateString(data) {
+    let file = '';
+    let id = '';
+    data.forEach(name => {
+        if (name != '') {
+            let res = name.substring(8).split('_');
+            id = id.concat(res[0]).concat('\n');
+            file = file.concat(res[1]).concat('\n');
+        }
+    });
+    return id.concat('\n\n').concat(file);
+}
+
 function main() {
     const ws = fs.createWriteStream('./output.md');
 
-    const n = parseInt(readLine().trim(), 10);
+    // const n = parseInt(readLine().trim(), 10);
 
-    const data = readLine().replace(/\s+$/g, '').split(' ').map(dataTemp => parseInt(dataTemp, 10));
+    // const data = readLine().replace(/\s+$/g, '').split(' ').map(dataTemp => parseInt(dataTemp, 10));
 
-    const res = quartiles(data);
-
-    ws.write(res.join('\n') + '\n');
-
+    // const res = quartiles(data);
+    const input = readLine();
+    ws.write(separateString(input));
     ws.end();
+
+    // ws.write(res.join('\n') + '\n');
+
+    // ws.end();
 }

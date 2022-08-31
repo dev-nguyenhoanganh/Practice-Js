@@ -11,9 +11,9 @@ N = 6
 X = [1, 2, 3, 4, 5, 5]
 ```
 
-The mean is $`\frac{20}{6} = 3.3`$ 
+The mean is $\frac{20}{6} = 3.3$ 
 
-The median is $`\frac{3 + 4}{2} = 3.5`$
+The median is $\frac{3 + 4}{2} = 3.5$
 
 The mode is 5 because 5 occurs most frequently.
 
@@ -60,7 +60,7 @@ We sum all `N` elements in the array, divide the sum by `N`, and print our resul
 To calculate the median, we need the elements of the array to be sorted in either non-increasing or non-decreasing order. The sorted array
 
 
-$`X = {4978, 11735, 14216, 14470, 38120, 51135, 64630, 67060, 73429, 99233}`$. We then average the two middle elements:
+$X = {4978, 11735, 14216, 14470, 38120, 51135, 64630, 67060, 73429, 99233}$. We then average the two middle elements:
 ```math
 median = \frac{x_{4} + x_{5}}{2} = \frac{89255}{2} = 44627.5
 ```
