@@ -6,17 +6,14 @@ Given an array $arr$ of $n$ integers, calculate the respective first quartile $Q
 
 **Example**
 
-```math
-arr = [9, 5, 7, 1, 3]
-```
+$arr = [9, 5, 7, 1, 3]$
 
 The sorted array is `[1, 3, 5, 7, 9]` which has an odd number of elements. The lower half consists of `[1, 3]`, and its median is $\frac{1 + 3}{2} = 2$. The middle element is `5` and represents the second quartile. The upper half is `[5, 7]` and its median is $\frac{5 + 7}{2} = 8$. Return `[2, 5, 8]`.
 
 ---
 
-```math
-arr = [1, 3, 5, 7]
-```
+$arr = [1, 3, 5, 7]$
+
 The array is already sorted. The lower half is `[1, 3]` with a median $= \frac{1 + 3}{2} = 4$. The median of the entire array is $\frac{3 + 5}{2}$, and of the upper half is $\frac{5 + 7}{2}$. Return `[2, 4, 6]`.
 
 

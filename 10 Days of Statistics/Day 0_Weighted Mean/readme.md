@@ -62,10 +62,8 @@ STDIN             Function
 
 We use the following formula to calculate the weighted mean:
 
-```math
-m_{w} = \frac{\sum_{i = 0}^{N - 1} (x_{i} \times w_{i})}{\sum_{i = 0}^{N - 1} w_{i}}
+$m_{w} = \frac{\sum_{i = 0}^{N - 1} (x_{i} \times w_{i})}{\sum_{i = 0}^{N - 1} w_{i}}$
 
-\to m_{w} = \frac{10 \times 1 + 40 \times 2 + 30 \times 3 + 50 \times 4 + 20 \times 5}{1 + 2 + 3 + 4 + 5} = \frac{480}{15} = 32.0
-```
+$\to m_{w} = \frac{10 \times 1 + 40 \times 2 + 30 \times 3 + 50 \times 4 + 20 \times 5}{1 + 2 + 3 + 4 + 5} = \frac{480}{15} = 32.0$
 
 And then print our result to a scale of `1` decimal place `32.0` on a new line.
