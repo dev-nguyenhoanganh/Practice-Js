@@ -6,12 +6,11 @@ Given an array $arr$, of $n$ integers, calculate and print the standard deviatio
 
 **Example**
 
-```math
-arr = [2, 5, 2, 7, 4]
-```
+$arr = [2, 5, 2, 7, 4]$
 
 The sum of the array values is $20$ and there are $5$ elements. The mean is $4.0$.
 Subtract the mean from each element, square each result, and take their sum.
+
 $(2 - 4)^2 = 4$
 
 $(5 - 4)^2 = 1$
@@ -67,9 +66,7 @@ STDIN             Function
 
 First, find the mean:
 
-```math
-\mu = \frac{\sum_{i = 0}^{n - 1} arr[i]}{n} = 30.0
-```
+$\mu = \frac{\sum_{i = 0}^{n - 1} arr[i]}{n} = 30.0$
 
 Next, calculate the squared distance from the mean $(arr[i] - \mu)^2$, for each $arr[i]$:
 
@@ -81,6 +78,4 @@ Next, calculate the squared distance from the mean $(arr[i] - \mu)^2$, for each 
 
 Now compute $\sum_{i = 0}^{n - 1} (arr[i] - \mu)^2 = 400 + 100 + 0 + 400 + 100 = 1000$, so:
 
-```math
-\sigma = \sqrt{\frac{\sum_{i = 0}^{n - 1} (arr[i] - \mu)^2}{n}} = \sqrt{\frac{1000}{5}} = \sqrt{200} = 14.1421356
-```
+$\sigma = \sqrt{\frac{\sum_{i = 0}^{n - 1} (arr[i] - \mu)^2}{n}} = \sqrt{\frac{1000}{5}} = \sqrt{200} = 14.1421356$

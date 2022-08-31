@@ -15,9 +15,9 @@ The binomial random variable is the number of successes, $x$ out of $x$ trials.
 
 The binomial distribution is the probability distribution for the binomial random variable, given by the following probability mass function:
 
-```math
+$
     b(x, n, p) = (_{x}^{n}) \cdot p^{x} \cdot q^{n - x}
-```
+$
 
 Note: Recall that $(_{x}^{n}) = \frac{n!}{x!(n - x)!}$.
 

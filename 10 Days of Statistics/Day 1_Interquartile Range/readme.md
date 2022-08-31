@@ -78,9 +78,7 @@ The given data is:
 
 First, we create data set $S$ containing the data from set $values$ at the respective frequencies specified by $freqs$:
 
-```math
-S = \{6, 6, 6, 6, 6, 8, 8, 8, 10, 10, 12, 12, 12, 12, 16, 16, 16, 16, 16, 20\}
-```
+$S = \{6, 6, 6, 6, 6, 8, 8, 8, 10, 10, 12, 12, 12, 12, 16, 16, 16, 16, 16, 20\}$
 
 As there are an even number of data points in the original ordered data set, we will split this data set exactly in half:
 
